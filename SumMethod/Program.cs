@@ -6,10 +6,17 @@ namespace SumMethod
     {
         public static void Main()
         {
+            Console.Write("Please enter a number: ");
+            int input = int.Parse(Console.ReadLine());
+            Sum(input);
+
             Console.ReadLine();
         }
 
-        // TODO: Create a method that returns the sum of all integer numbers up to and including given value. 
-        // Use the equation (n * (n + 1)) / 2.
+
+        public static int Sum(int input)
+      {
+            return (input * (input + 1)) / 2;
+        }
     }
 }
